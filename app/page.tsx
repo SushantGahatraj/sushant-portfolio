@@ -1,54 +1,22 @@
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
-const skillGroups = [
-  { label: "Business", skills: ["Financial analysis", "Taxation", "ERP systems", "Business operations"] },
-  { label: "Technical", skills: ["SQL", "Python", "Data analysis", "Microsoft Excel"] },
-  { label: "Strengths", skills: ["Research", "Problem solving", "Collaboration", "Communication"] },
-];
+const tools = ["SQL", "Python", "Excel", "ERP systems", "Data analysis", "AI tools"];
 
 export default function Home() {
   return (
     <main>
-      <nav className="nav wrap">
-        <a className="monogram" href="#top" aria-label="Home">SG<span>.</span></a>
-        <div className="nav-links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a></div>
-        <a className="nav-contact" href="mailto:sgahatraj@caldwell.edu">Let&apos;s talk <Arrow /></a>
-      </nav>
-
+      <nav className="nav wrap"><a className="signature" href="#top">sushant<span>.</span></a><div className="nav-links"><a href="#about">about</a><a href="#notes">notes</a><a href="#toolbox">toolbox</a></div><a className="mail-pill" href="mailto:sgahatraj@caldwell.edu">say hello <Arrow /></a></nav>
       <section className="hero wrap" id="top">
-        <div className="hero-copy">
-          <p className="eyebrow"><i /> Available for opportunities</p>
-          <h1>Curious mind.<br /><em>Clear impact.</em></h1>
-          <p className="intro">I&apos;m Sushant Gahatraj, a business-minded problem solver who brings structure to complex work through thoughtful analysis, technology, and collaboration.</p>
-          <div className="hero-actions"><a className="button dark" href="mailto:sgahatraj@caldwell.edu">Get in touch <Arrow /></a><a className="text-link" href="#experience">Explore my work <span>↓</span></a></div>
-        </div>
-        <div className="hero-art" aria-hidden="true">
-          <div className="orb orb-one" /><div className="orb orb-two" /><div className="orbit orbit-one" /><div className="orbit orbit-two" />
-          <div className="initials">SG</div><p>Business<br />&amp; Technology</p>
-        </div>
+        <div className="hero-side"><p className="tiny-label">SUSHANT GAHATRAJ</p><p className="vertical-note">BUSINESS × TECH × CURIOSITY</p></div>
+        <div className="hero-main"><p className="availability"><i /> open to new opportunities</p><h1>Hey, I&apos;m<br /><em>Sushant.</em></h1><p className="hero-blurb">I&apos;m interested in the quiet work behind good decisions: finding the pattern, asking a better question, and making the next step feel obvious.</p><a className="jump-link" href="#about">a little more about me <span>↓</span></a></div>
+        <div className="hero-sticker" aria-label="A personal mark"><span>curious<br />by default</span><b>✦</b></div>
       </section>
-
-      <section className="marquee"><div>ANALYZE <b>✦</b> BUILD <b>✦</b> IMPROVE <b>✦</b> LEARN <b>✦</b> ANALYZE <b>✦</b> BUILD <b>✦</b> IMPROVE <b>✦</b></div></section>
-
-      <section className="about wrap" id="about">
-        <p className="section-label">01 / ABOUT</p>
-        <div><h2>Grounded in details.<br />Driven by <em>possibility.</em></h2><p className="body-copy">My work sits at the intersection of business and technology. I enjoy turning information into practical direction, finding better ways to work, and contributing with care to every team I join.</p></div>
-      </section>
-
-      <section className="experience wrap" id="experience">
-        <div className="section-heading"><p className="section-label">02 / EXPERIENCE</p><p>Selected focus areas and capabilities developed through academic and professional work.</p></div>
-        <div className="experience-list">
-          <article><span className="number">01</span><div><h3>Business analysis</h3><p>Connecting financial and operational information to support clear, well-reasoned decisions.</p></div><span className="plus">+</span></article>
-          <article><span className="number">02</span><div><h3>Data &amp; systems</h3><p>Using SQL, Excel, and ERP tools to organize data, identify patterns, and improve processes.</p></div><span className="plus">+</span></article>
-          <article><span className="number">03</span><div><h3>Continuous learning</h3><p>Building practical technical fluency while staying focused on the people and outcomes behind the work.</p></div><span className="plus">+</span></article>
-        </div>
-      </section>
-
-      <section className="skills" id="skills"><div className="wrap"><p className="section-label">03 / TOOLKIT</p><h2>A versatile<br /><em>working set.</em></h2><div className="skill-grid">{skillGroups.map((group) => <div className="skill-card" key={group.label}><p>{group.label}</p><ul>{group.skills.map((skill) => <li key={skill}>{skill}<span>↗</span></li>)}</ul></div>)}</div></div></section>
-
-      <section className="education wrap"><p className="section-label">04 / EDUCATION</p><div className="education-line"><div><p className="degree">Caldwell University</p><p>Academic foundation in business, finance, and technology.</p></div><a href="mailto:sgahatraj@caldwell.edu" className="round-link" aria-label="Email Sushant"><Arrow /></a></div></section>
-
-      <footer><div className="wrap footer-inner"><p>Have a role or project in mind?</p><a href="mailto:sgahatraj@caldwell.edu">Let&apos;s make it count. <Arrow /></a><div className="footer-bottom"><span>© 2026 Sushant Gahatraj</span><a href="mailto:sgahatraj@caldwell.edu">sgahatraj@caldwell.edu</a></div></div></footer>
+      <section className="scroll-strip"><div className="strip-inner"><span>making sense of data</span><b>✦</b><span>learning in public</span><b>✦</b><span>always building</span><b>✦</b><span>making sense of data</span><b>✦</b></div></section>
+      <section className="about wrap" id="about"><div className="section-intro"><p className="section-no">01 / THE SHORT VERSION</p><h2>Part analyst.<br />Part <em>maker.</em></h2></div><div className="about-copy"><p>I&apos;m a student and early-career professional exploring where business thinking and technology overlap. I enjoy work that takes a messy problem and gives it shape.</p><p>Whether I&apos;m digging into a spreadsheet, learning a new tool, or working through a process with a team, I&apos;m happiest when there&apos;s something useful to figure out.</p><a href="mailto:sgahatraj@caldwell.edu">Let&apos;s connect <Arrow /></a></div></section>
+      <section className="snapshot wrap" id="notes"><p className="section-no">02 / RIGHT NOW</p><div className="snapshot-grid"><article className="big-note"><span className="scribble">currently</span><h3>Growing a toolkit<br />for <em>practical</em> impact.</h3><div className="doodle"><i /><i /><i /></div></article><article className="small-note dark-note"><p>THINKING ABOUT</p><h4>How can data make work simpler?</h4><span>01</span></article><article className="small-note lime-note"><p>STUDYING AT</p><h4>Caldwell<br />University</h4><span>02</span></article><article className="small-note paper-note"><p>REACH ME AT</p><a href="mailto:sgahatraj@caldwell.edu">sgahatraj<br />@caldwell.edu <Arrow /></a><span>03</span></article></div></section>
+      <section className="toolbox" id="toolbox"><div className="wrap"><p className="section-no">03 / MY TOOLBOX</p><div className="toolbox-top"><h2>Things I&apos;m<br /><em>getting good at.</em></h2><p>Not a static list. This is the collection I&apos;m actively using, improving, and adding to.</p></div><div className="tool-list">{tools.map((tool, index) => <div className="tool" key={tool}><span>0{index + 1}</span><strong>{tool}</strong><i>↗</i></div>)}</div></div></section>
+      <section className="contact wrap"><p className="section-no">04 / SAY HELLO</p><h2>Got something<br />interesting in mind?</h2><a href="mailto:sgahatraj@caldwell.edu" className="contact-mail">sgahatraj@caldwell.edu <Arrow /></a></section>
+      <footer className="wrap"><a className="signature" href="#top">sushant<span>.</span></a><p>© 2026 — made with curiosity</p><a href="#top">back to top ↑</a></footer>
     </main>
   );
 }
